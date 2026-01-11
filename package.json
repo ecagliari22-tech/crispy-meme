@@ -1,0 +1,16 @@
+{
+  "name": "nome-do-seu-app",
+  "version": "1.0.0",
+  "description": "App 3D Nuvem",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Preparando build...'"
+  },
+  "dependencies": {
+    "@capacitor/android": "^5.0.0",
+    "@capacitor/core": "^5.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^5.0.0"
+  }
+}
