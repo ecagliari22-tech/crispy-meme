@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Histórias com Leitura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Histórias</h1>
+        <div class="theme-toggle">
+            <span>Claro</span>
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider round"></span>
+            </label>
+            <span>Escuro</span>
+        </div>
+        <div class="text-input">
+            <input type="text" id="storyPrompt" placeholder="Digite uma ideia ou tema para a história...">
+            <button id="generateButton">Gerar História</button>
+        </div>
+        <div class="story-output">
+            <textarea id="textInput" placeholder="Sua história gerada aparecerá aqui..." readonly></textarea>
+            <div class="text-option">
+                <button id="toggleEditBtn">Alternar Edição</button>
+                <span id="editModeStatus">Modo de edição: DESLIGADO</span>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="voice-selection">
+                <p>Tipo de voz:</p>
+                <div class="voice-buttons">
+                    <button id="englishVoiceBtn" class="voice-btn selected">Voz Inglesa</button>
+                    <button id="robotVoiceBtn" class="voice-btn">Voz Robótica</button>
+                </div>
+            </div>
+            <div class="audio-controls">
+                <button id="speakButton">
+                    <img src="speaker_icon.png" alt="Ler" class="speak-icon">
+                    Ler História
+                </button>
+                <button id="pauseButton" disabled>
+                    Pausar
+                </button>
+            </div>
+        </div>
+        <div class="status" id="status"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
